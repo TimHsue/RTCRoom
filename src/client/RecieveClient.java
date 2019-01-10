@@ -54,7 +54,9 @@ public class RecieveClient extends Thread {
 				message = read(socketIn);
 
 				message = message.substring(1);
-				System.out.println(userName + ":" + message);
+				synchronized(this) {
+					application.Exe.updateMessage(userName, message);
+				}				
 			}
 		}
 	}

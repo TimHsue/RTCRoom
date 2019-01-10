@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Client {
-	
+	/*
 	static ServerLinker baseLink;
 	
 	static private String host = "localhost";
@@ -37,4 +37,5 @@ public class Client {
 
 		while(baseLink.isAlive());
 	}
+	*/
 }

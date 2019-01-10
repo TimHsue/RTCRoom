@@ -25,7 +25,7 @@ public class SendClient extends Thread {
 		String response = null;
 		
 		while (true) {
-			message = Client.getMessage();
+			message = application.Exe.getMessage();
 			try {
 				socketOut.write("$SENDMESSAGE".getBytes());
 				socketOut.write("$END".getBytes());

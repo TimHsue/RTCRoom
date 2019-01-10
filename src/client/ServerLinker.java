@@ -76,7 +76,8 @@ public class ServerLinker extends Thread {
 			
 			// set name
 			do {
-				userName = Client.getName();
+				System.out.println("get name");
+				userName = application.Exe.getName();
 		
 				System.out.println("Send name:" + userName);
 				socketOut.write("$SETNAME".getBytes());
@@ -96,7 +97,7 @@ public class ServerLinker extends Thread {
 			
 			// set room
 			do { 
-				roomId = Client.getId();
+				roomId = application.Exe.getId();
 				
 				socketOut.write("$SETROOMID".getBytes());
 				socketOut.write("$END".getBytes());

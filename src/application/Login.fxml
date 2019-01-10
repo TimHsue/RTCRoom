@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="back" prefHeight="284.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <ImageView fx:id="backGround" fitHeight="284.0" fitWidth="406.0" pickOnBounds="true">
+         <image>
+            <Image url="http://pic.90sjimg.com/back_pic/u/00/37/73/87/55efa518c5eb6.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="name" layoutX="127.0" layoutY="86.0" prefHeight="27.0" prefWidth="210.0" />
+      <Text fx:id="nameTitle" layoutX="73.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="35.5595703125">
+         <font>
+            <Font name="Apple Chancery" size="13.0" />
+         </font>
+      </Text>
+      <Text fx:id="roomTitle" layoutX="66.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RoomID">
+         <font>
+            <Font name="Apple Chancery" size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="roomID" layoutX="127.0" layoutY="137.0" prefHeight="27.0" prefWidth="210.0" />
+   </children>
+</AnchorPane>
