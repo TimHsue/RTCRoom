@@ -61,6 +61,8 @@ public class LoginController {
 		Stage stage = (Stage) btn.getScene().getWindow();
         stage.close();
         Main m = new Main();
+        m.setRoomId(idTmp);
+        m.setUserName(nameTmp);
         Stage a = new Stage();
         try {
 			m.start(a);

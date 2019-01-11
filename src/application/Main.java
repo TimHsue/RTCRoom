@@ -17,8 +17,20 @@ public class Main extends Application {
 	private Parent root1;
 	
 	private Scene scene;
+	
+	private String roomId = null;
+	
+	private String userName = null;
   
     public static boolean active = false;
+    
+    public void setRoomId(String tar) {
+    	roomId = "[" + tar + "]";
+    }
+    
+    public void setUserName(String tar) {
+    	userName = tar;
+    }
 	
 	@Override  
     public void start(Stage primaryStage) throws Exception {
@@ -35,7 +47,7 @@ public class Main extends Application {
         primaryStage.setResizable(true);
         primaryStage.setTitle("Chatting Room Final");
         
-        myController.init();
+        myController.init(roomId, userName);
         primaryStage.show();
         
         active = true;

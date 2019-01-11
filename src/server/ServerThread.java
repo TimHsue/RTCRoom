@@ -150,7 +150,7 @@ public class ServerThread extends Thread {
 					synchronized(this) {
 						target.sendMessage(uid, userName, tmp);
 					}
-				} else if (tmp.equals("$SENDAUDIO")) {
+				} else if (tmp.equals("$SENDVEDIO")) {
 					
 				}
 			}

@@ -86,7 +86,7 @@ public class Scene1Controller {
 	
 	private double lastLineNum = 1;
 	
-	private boolean mePostLast = true;
+	private boolean mePostLast = false;
 	
 	private JFXNodesList list;
 	
@@ -99,7 +99,7 @@ public class Scene1Controller {
 	private String inputText;
 	
 	
-	public void init() {
+	public void init(String title, String name) {
 		myNum = new ArrayList<Integer>();
 		yourNum = new ArrayList<Integer>();
 	
@@ -163,6 +163,9 @@ public class Scene1Controller {
 		list.setRotate(90.0);
 		
 		sendGround.getChildren().add(list);
+		userName.setText(title);
+		myName.setText(name);
+		
 	}
 	
 	static private void toSameRect(Rectangle a, Rectangle model) {
@@ -202,12 +205,12 @@ public class Scene1Controller {
 		int num = getLineNum(str), pos = 0, tmp = 0, count = 0;
 		int line[] = new int[num];
 		if (str.length() == 0) return 0;
-		if (str.indexOf('\n') == -1) return str.length();
+		if (str.indexOf('\n') == -1) return str.getBytes().length;
 		while ((pos = str.indexOf('\n', pos + 1)) != -1) {
-			line[count++] = str.substring(tmp, pos).length();
+			line[count++] = str.substring(tmp, pos).getBytes().length;
 			tmp = pos;
 		}
-		line[count] = str.substring(tmp, str.length()).length();
+		line[count] = str.substring(tmp, str.length()).getBytes().length;
 		Arrays.sort(line);
 		return line[num - 1];
 	}
@@ -246,7 +249,7 @@ public class Scene1Controller {
 		inputText = sendText.getText();
 		
 		Text myTextClone = new Text();
-		myTextClone.setFont(sendText.getFont());
+		myTextClone.setFont(myText.getFont());
 		myTextClone.setFill(Color.WHITE);
 		
 		Circle a = new Circle();
@@ -415,7 +418,7 @@ public class Scene1Controller {
 				yourNameClone.setText(yourName.getText());
 				
 				Text yourTextClone = new Text();
-				yourTextClone.setFont(sendText.getFont());
+				yourTextClone.setFont(yourText.getFont());
 				yourTextClone.setFill(Color.BLACK);
 				
 				Circle a = new Circle();
@@ -540,7 +543,6 @@ public class Scene1Controller {
 				}
 				else {
 					buffer.setHeight(getMessageNum(myNum));
-				
 				}
 			
 				yourChatBoard.getChildren().add(buffer);

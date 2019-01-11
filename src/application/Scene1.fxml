@@ -15,7 +15,7 @@
    <children>
       <AnchorPane fx:id="sendGround" layoutX="-6.0" layoutY="448.0" prefHeight="138.0" prefWidth="487.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <TextArea fx:id="sendText" layoutX="4.0" layoutY="-24.0" prefHeight="171.0" prefWidth="479.0" promptText="please text your message here..." AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="0.0">
+            <TextArea fx:id="sendText" layoutX="13.0" layoutY="-24.0" prefHeight="134.0" prefWidth="580.0" promptText="please text your message here..." AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="0.0">
                <font>
                   <Font name="Apple Symbols" size="17.0" />
                </font>
@@ -40,7 +40,7 @@
          <children>
             <Text fx:id="myName" layoutX="329.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="myName" textAlignment="RIGHT" wrappingWidth="67.0" AnchorPane.rightAnchor="14.0">
                <font>
-                  <Font name="Apple Symbols" size="17.0" />
+                  <Font name="Apple Symbols" size="13.0" />
                </font>
             </Text>
             <Pane fx:id="myBubblePane" layoutX="46.0" layoutY="7.0" prefHeight="54.0" prefWidth="317.0" AnchorPane.rightAnchor="47.0">
@@ -55,7 +55,7 @@
                   </Group>
                   <Text fx:id="myText" fill="#fcfcfc" layoutX="151.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="RIGHT" wrappingWidth="120.0">
                      <font>
-                        <Font name="Apple Symbols" size="17.0" />
+                        <Font size="11.0" />
                      </font>
                   </Text>
                </children>
@@ -66,7 +66,7 @@
          <children>
             <Text fx:id="yourName" layoutX="8.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="yourName" wrappingWidth="67.0" AnchorPane.leftAnchor="8.0">
                <font>
-                  <Font name="Apple Symbols" size="17.0" />
+                  <Font name="Apple Symbols" size="13.0" />
                </font>
             </Text>
             <Pane fx:id="yourBubblePane" layoutX="46.0" layoutY="19.0" prefHeight="58.0" prefWidth="317.0" AnchorPane.leftAnchor="46.0">
@@ -81,7 +81,7 @@
                   </Group>
                   <Text fx:id="yourText" layoutX="47.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="120.0">
                      <font>
-                        <Font name="Apple Symbols" size="17.0" />
+                        <Font size="11.0" />
                      </font>
                   </Text>
                </children>

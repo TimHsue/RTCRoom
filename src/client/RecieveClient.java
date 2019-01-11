@@ -57,6 +57,10 @@ public class RecieveClient extends Thread {
 				synchronized(this) {
 					application.Exe.updateMessage(userName, message);
 				}				
+			} else if (message.equals("$VEDIO")) {
+				
+			} else if (message.equals("$AUDIO")) {
+				
 			}
 		}
 	}

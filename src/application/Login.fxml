@@ -15,7 +15,7 @@
          </image>
       </ImageView>
       <TextField fx:id="name" layoutX="127.0" layoutY="86.0" prefHeight="27.0" prefWidth="210.0" />
-      <Text fx:id="nameTitle" layoutX="73.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="35.5595703125">
+      <Text fx:id="nameTitle" layoutX="69.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" wrappingWidth="44.5595703125">
          <font>
             <Font name="Apple Chancery" size="13.0" />
          </font>

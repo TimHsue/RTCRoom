@@ -80,7 +80,7 @@ public class Exe extends Application {
 		baseLink = new ServerLinker(host, port, ServerLinker.BASE);
 		baseLink.start();
 
-        scene = new Scene(root1,406, 248);
+        scene = new Scene(root1, 406, 248);
         
         scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
         primaryStage.setScene(scene);
@@ -90,7 +90,6 @@ public class Exe extends Application {
         
         loginController.init();
         primaryStage.show();
-        
 	}
 	
 	public static void main(String args[]) {
